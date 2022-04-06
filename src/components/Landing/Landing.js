@@ -68,7 +68,7 @@ function Landing() {
   }));
 
   const classes = useStyles();
-  const titleArr = ["Web Developer", "Web Designer", "Product Engineer"];
+  const titleArr = ["Full Stack Engineer", "Web Designer", "Product Engineer"];
 
   return (
     <div className="landing">
@@ -140,7 +140,7 @@ function Landing() {
         >
           <div className="lcr--content" style={{ color: theme.tertiary }}>
             <h6>{`Hi, I am ${headerData.name} and I'm a `}</h6>
-            <div style={{ height: "57px" }}>
+            <div style={{ height: "57px" , width: '500px'}}>
               <Typing loop hideCursor>
                 {titleArr.map((item) => (
                   <>

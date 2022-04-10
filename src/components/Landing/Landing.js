@@ -65,6 +65,26 @@ function Landing() {
         display: "none",
       },
     },
+    typingDiv: {
+      height: '57px',
+      width: '500px',
+      [t.breakpoints.down('sm')]:{
+        width: '260px',
+        height: '50px',
+      },
+      [t.breakpoints.down('xs')]:{
+        width: '290px',
+        height: '60px',
+      },  
+    },
+    typewriterFont: {
+      [t.breakpoints.down('sm')]:{
+        fontSize: '1.7rem !important',
+      },
+      [t.breakpoints.down('xs')]:{
+        fontSize: '1.9rem !important',
+      },
+    },
   }));
 
   const classes = useStyles();
@@ -140,12 +160,12 @@ function Landing() {
         >
           <div className="lcr--content" style={{ color: theme.tertiary }}>
             <h6>{`Hi, I am ${headerData.name} and I'm a `}</h6>
-            <div style={{ height: "57px" , width: '500px'}}>
+            <div className={classes.typingDiv}>
               <Typing loop hideCursor>
                 {titleArr.map((item) => (
                   <>
                     <Typing.Speed ms={20} />
-                    <h1>{item}</h1>
+                    <h1 className={classes.typewriterFont}>{item}</h1>
                     <Typing.Delay ms={500} />
                     <Typing.Backspace count={20} />
                   </>

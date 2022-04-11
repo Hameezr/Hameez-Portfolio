@@ -1,20 +1,20 @@
- export const skillsData = [
-    'HTML',
-    'Figma',
-    'Javascript',
-    'CSS',
-    'React',
-    'Django',
-    'Python',
-    'Next JS',
-    'Adobe XD',
-    'Typescript',
-    'Postgresql',
-]
+export const skillsData = [
+  "React",
+  "MaterialUI",
+  "Django",
+  "Javascript",
+  "Python",
+  "HTML",
+  "Figma",
+  "CSS",
+  "Next JS",
+  "Adobe XD",
+  "Typescript",
+  "Postgresql",
+];
 
 // Choose your skills from below. Make sure it's in the same format and spelled correctly.
 // Couldn't find the required skills? Raise an issue on github at https://github.com/hhhrrrttt222111/developer-portfolio/issues/new
-
 
 // AVAILABLE SKILLS
 

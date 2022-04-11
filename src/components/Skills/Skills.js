@@ -25,12 +25,13 @@ function Skills() {
                 <div className="skill--scroll">
                     <Marquee 
                         gradient={false} 
-                        speed={80} 
-                        pauseOnHover={true}
-                        pauseOnClick={true} 
+                        speed={130} 
+                        pauseOnHover
+                        pauseOnClick 
                         delay={0}
-                        play={true} 
+                        play 
                         direction="left"
+                        loop={100}
                     >
                         {skillsData.map((skill, id) => (
                             <div className="skill--box" key={id} style={skillBoxStyle}>

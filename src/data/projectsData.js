@@ -11,39 +11,39 @@ import eight from '../assets/svg/projects/eight.svg'
 export const projectsData = [
     {
         id: 1,
-        projectName: 'Employee Management',
-        projectDesc: 'This project aims to build an employee management system that consolidates all information of a company',
-        tags: ['React', 'CSS', 'Material Ui'],
-        code: 'https://github.com/hhhrrrttt222111/developer-portfolio',
-        demo: 'https://github.com/hhhrrrttt222111/developer-portfolio',
+        projectName: 'Applicant Tracking System',
+        projectDesc: 'An ATS that is one hiring software that enables to attract quality applicants & evaluate them collaboratively so the users can find the right fit for their team.',
+        tags: ['React', 'Python', 'Django', 'Material Ui', 'Redux/Saga'],
+        code: 'https://www.hirecinch.com/',
+        demo: 'https://www.hirecinch.com/',
         image: one
     },
     {
         id: 2,
-        projectName: 'Railway Tracking',
-        projectDesc: 'This project is a railway tracking system that allows users to obtain relevant information about train timing.',
-        tags: ['Django', 'Tailwind CSS'],
-        code: 'https://github.com/hhhrrrttt222111/developer-portfolio',
-        demo: 'https://github.com/hhhrrrttt222111/developer-portfolio',
+        projectName: 'Profile Portfolio',
+        projectDesc: 'This project was to build a portfolio using Javascript for a client, client\'s information is kept confidential hence I\'ve added my own information',
+        tags: ['Javascript', 'CSS', 'HTML'],
+        code: 'https://github.com/Hameezr/PortfolioHameez',
+        demo: 'https://hameezr.github.io/PortfolioHameez/',
         image: two
-    },
+    },  
     {
         id: 3,
-        projectName: 'Weather App',
-        projectDesc: 'Weather forecast systems and applications predict weather conditions based on multiple parameters.',
-        tags: ['Django', 'CSS', 'Material Ui'],
-        code: 'https://github.com/hhhrrrttt222111/developer-portfolio',
-        demo: 'https://github.com/hhhrrrttt222111/developer-portfolio',
-        image: three
+        projectName: 'Material-Ui OpenSource contribution',
+        projectDesc: 'Developed a component in material-ui Datagrid as an open source contribution with all the benchmarks',
+        tags: ['React', 'Javascript'],
+        code: 'https://github.com/Hameezr/mui-x',
+        demo: 'https://codesandbox.io/s/4he50d?file=/demo.js',
+        image: four
     },
     {
         id: 4,
-        projectName: 'Android Patient Tracker',
-        projectDesc: 'This project involves the development of an Android application for viewing and managing patient data.',
-        tags: ['Flutter', 'Firebase'],
-        code: 'https://github.com/hhhrrrttt222111/developer-portfolio',
-        demo: 'https://github.com/hhhrrrttt222111/developer-portfolio',
-        image: four
+        projectName: 'Learning Management System',
+        projectDesc: 'This project aims to build a student management system that consolidates all information of a student and his institution',
+        tags: ['Java', 'MySQL'],
+        code: 'https://github.com/Hameezr/Learning-Management-System',
+        demo: 'https://github.com/Hameezr/Learning-Management-System',
+        image: three
     },
     {
         id: 5,

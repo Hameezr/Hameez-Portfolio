@@ -19,7 +19,7 @@ function Services() {
                     </div>
                     <div className="services-body">
                         <p style={{color:theme.tertiary80}}>
-                            These are some of the services I offer. Reach out to me if I can help you with any!
+                            These are the services I would be happy to provide and enhance your venture by contributing to it. Feel free to reach me out!
                         </p>
                         <div className="services-bodycontainer">
                             {servicesData.map(services => (

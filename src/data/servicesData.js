@@ -14,7 +14,7 @@ export const servicesData = [
     // },
     {
         id: 2,
-        title: 'Content Writing',
+        title: 'Technical Writing',
         icon: <BiPencil /> 
     },
     {

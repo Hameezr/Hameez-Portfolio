@@ -31,7 +31,7 @@ function AchievementCard({id, title, details, date, field, image}) {
                         <p style={{color: theme.tertiary80}}>{details}</p>
                     </div>
                     <div className="achievecard-details2" style={{color: theme.primary}}>
-                        <h5>{date}</h5>
+                        {/* <h5>{date}</h5> */}
                         <div className="achievecard-field">
                             <AiOutlineFolder />
                             <h5>{field}</h5>

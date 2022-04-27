@@ -1,6 +1,10 @@
+import react from '../assets/svg/achievements/react.svg'
+import community from '../assets/svg/achievements/community.svg'
+import team from '../assets/svg/achievements/Team.png'
+
 export const achievementData = {
-    bio : "Putting quantified achievements on a resume is great, but I just don’t work with hard numbers. I have no data to support the quality of my work. If you have lots of relevant experience, the heading statement of your resume will be a summary.",
-    achievements : [
+    bio : "I believe I possess a growth mindset to keep on evolving and making positive changes that solves a problem of the society or people in general. With such a mindset, there are accomplishments at every walk of life. Not many of these accomplishments can be quantified though, and for that I have my past projects to showcase my skills",
+        achievements : [
         {
             id : 1,
             title : 'Google Cloud certification',
@@ -11,19 +15,35 @@ export const achievementData = {
         },
         {
             id : 2,
-            title : 'AWS Certification',
-            details : 'Validate technical skills and cloud expertise to grow your career and business.',
+            title : 'ReactJS and Redux Saga certification',
+            details : 'Validate technical skills in ReactJS expertise.',
             date : 'Aug 20, 2019',
-            field : 'Automation',
-            image : 'https://images.unsplash.com/photo-1523474253046-8cd2748b5fd2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80'
+            field : 'Tech',
+            image : react
         },
         {
             id : 3,
-            title : 'Professional Data Engineer Certification',
-            details : 'Professional Data Engineers enable data-driven decision making by collecting, transforming, and publishing data.',
+            title : 'Mobilized a 5000 members community of youth to raise awareness among important social issues and tech adaptability including NFT\'s',
+            details : 'Professional leadership qualities were tested, and an experience of starting something from scratch and building a viable model',
             date : 'Aug 20, 2019',
-            field : 'Automation',
+            field : 'Leadership',
+            image : community
+        },
+        {
+            id : 4,
+            title : 'OpenSource contributions in some notable opensource projects like Material-UI and codevault',
+            details : 'Expertise towards contributing to major open-source libraries',
+            date : 'Aug 20, 2019',
+            field : 'Tech',
             image : 'https://images.unsplash.com/photo-1489389944381-3471b5b30f04?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80'
+        },
+        {
+            id : 5,
+            title : 'Trained and led a team of 5 juniors, reviewed their codebases to enhance their skillset',
+            details : 'Leadership and mentorship qualities validated',
+            date : 'Aug 20, 2019',
+            field : 'Tech',
+            image : team
         }
 
     ]

@@ -1,7 +1,7 @@
 import React, { useContext, useState } from 'react';
 import { Snackbar, IconButton, SnackbarContent } from '@material-ui/core';
 import CloseIcon from '@material-ui/icons/Close';
-import axios from 'axios';
+// import axios from 'axios';
 import isEmail from 'validator/lib/isEmail';
 import { makeStyles } from '@material-ui/core/styles';
 import {
@@ -165,6 +165,7 @@ function Contacts() {
             } else {
                 setErrMsg('Invalid email');
                 setOpen(true);
+                setSuccess('');
             }
         } else {
             setErrMsg('Enter all the fields');

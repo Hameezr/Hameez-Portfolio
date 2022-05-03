@@ -148,7 +148,7 @@ function Contacts() {
         fetch("/", {
           method: "POST",
           headers: { "Content-Type": "application/x-www-form-urlencoded" },
-          body: encode({ "form-name": "contact", ...responseData }),
+          body: encode({ "form-name": e.target.getAttribute("name"), ...responseData }),
         })
           .then(() => setSuccess(true))
           .catch((error) => alert(error));
@@ -179,9 +179,9 @@ function Contacts() {
       style={{ backgroundColor: theme.secondary }}
     >
       <div className="contacts--container">
-        <h1 style={{ color: theme.primary }}>Contacts</h1>
+        <h1 style={{ color: theme.primary }}>Reach me out!</h1>
         <div className="contacts-body">
-          <div className="contacts-form">
+          {/* <div className="contacts-form">
             <form
               name="contact"
               netlify="true"
@@ -285,7 +285,7 @@ function Contacts() {
                 message={errMsg}
               />
             </Snackbar>
-          </div>
+          </div> */}
 
           <div className="contacts-details">
             <a

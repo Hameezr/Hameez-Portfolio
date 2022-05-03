@@ -200,7 +200,7 @@ function Contacts() {
                   value={name}
                   onChange={(e) => setName(e.target.value)}
                   type="text"
-                  name="Name"
+                  name="name"
                   className={`form-input ${classes.input}`}
                 />
               </div>
@@ -213,7 +213,7 @@ function Contacts() {
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   type="email"
-                  name="Email"
+                  name="email"
                   className={`form-input ${classes.input}`}
                 />
               </div>
@@ -226,7 +226,7 @@ function Contacts() {
                   value={message}
                   onChange={(e) => setMessage(e.target.value)}
                   type="text"
-                  name="Message"
+                  name="message"
                   className={`form-message ${classes.message}`}
                 />
               </div>

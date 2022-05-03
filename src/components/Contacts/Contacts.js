@@ -27,6 +27,12 @@ import { socialsData } from '../../data/socialsData';
 import { contactsData } from '../../data/contactsData';
 import './Contacts.css';
 
+const encode = (data) => {
+    return Object.keys(data)
+        .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+        .join("&");
+  }
+
 function Contacts() {
     const [open, setOpen] = useState(false);
 
@@ -139,16 +145,23 @@ function Contacts() {
                     email: email,
                     message: message,
                 };
+                fetch("/", {
+                    method: "POST",
+                    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+                    body: encode({ "form-name": "contact-form", responseData })
+                  })
+                    .then(() => alert("Success!"))
+                    .catch(error => alert(error));
+                            
+                // axios.post(contactsData.sheetAPI, responseData).then((res) => {
+                //     setSuccess(true);
+                //     setErrMsg('');
 
-                axios.post(contactsData.sheetAPI, responseData).then((res) => {
-                    setSuccess(true);
-                    setErrMsg('');
-
-                    setName('');
-                    setEmail('');
-                    setMessage('');
-                    setOpen(false);
-                });
+                //     setName('');
+                //     setEmail('');
+                //     setMessage('');
+                //     setOpen(false);
+                // });
             } else {
                 setErrMsg('Invalid email');
                 setOpen(true);

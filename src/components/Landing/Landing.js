@@ -11,11 +11,11 @@ import { headerData } from "../../data/headerData";
 import { socialsData } from "../../data/socialsData";
 
 import {
-  FaTwitter,
+  FaMediumM,
   FaLinkedin,
   FaGithub,
-  FaYoutube,
-  FaBlogger,
+  FaStackOverflow,
+  FaInstagram,
 } from "react-icons/fa";
 
 function Landing() {
@@ -66,29 +66,34 @@ function Landing() {
       },
     },
     typingDiv: {
-      height: '57px',
-      width: '500px',
-      [t.breakpoints.down('sm')]:{
-        width: '260px',
-        height: '50px',
+      height: "57px",
+      width: "500px",
+      [t.breakpoints.down("sm")]: {
+        width: "260px",
+        height: "50px",
       },
-      [t.breakpoints.down('xs')]:{
-        width: '290px',
-        height: '60px',
-      },  
+      [t.breakpoints.down("xs")]: {
+        width: "290px",
+        height: "60px",
+      },
     },
     typewriterFont: {
-      [t.breakpoints.down('sm')]:{
-        fontSize: '1.7rem !important',
+      [t.breakpoints.down("sm")]: {
+        fontSize: "1.7rem !important",
       },
-      [t.breakpoints.down('xs')]:{
-        fontSize: '1.9rem !important',
+      [t.breakpoints.down("xs")]: {
+        fontSize: "1.9rem !important",
       },
     },
   }));
 
   const classes = useStyles();
-  const titleArr = ["Full Stack Engineer", "Web Designer", "Product Engineer"];
+  const [titleArr, setTitleArr] = React.useState([]);
+
+  React.useEffect(() => {
+    let temp = ["Full Stack Engineer", "Web Designer", "Product Engineer"];
+    setTitleArr(temp);
+  }, []);
 
   return (
     <div className="landing">
@@ -116,30 +121,39 @@ function Landing() {
                 />
               </a>
             )}
-            {socialsData.twitter && (
-              <a href={socialsData.twitter} target="_blank" rel="noreferrer">
-                <FaTwitter
-                  className="landing--social"
+            {socialsData.stackOverflow && (
+              <a
+                href={socialsData.stackOverflow}
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FaStackOverflow
+                  aria-label="Stack Overflow"
                   style={{ color: theme.secondary }}
-                  aria-label="Twitter"
+                  className="landing--social"
                 />
               </a>
             )}
-            {socialsData.youtube && (
-              <a href={socialsData.youtube} target="_blank" rel="noreferrer">
-                <FaYoutube
-                  className="landing--social"
+            {socialsData.medium && (
+              <a href={socialsData.medium} target="_blank" rel="noreferrer">
+                <FaMediumM
+                  aria-label="Medium"
                   style={{ color: theme.secondary }}
-                  aria-label="YouTube"
+                  className="landing--social"
                 />
               </a>
             )}
-            {socialsData.blogger && (
-              <a href={socialsData.blogger} target="_blank" rel="noreferrer">
-                <FaBlogger
-                  className="landing--social"
+            {socialsData.instagram && (
+              <a
+                href={socialsData.instagram}
+                target="_blank"
+                rel="noreferrer"
+                className={classes.socialIcon}
+              >
+                <FaInstagram
+                  aria-label="Instagram"
                   style={{ color: theme.secondary }}
-                  aria-label="Blogger"
+                  className="landing--social"
                 />
               </a>
             )}
@@ -161,7 +175,7 @@ function Landing() {
           <div className="lcr--content" style={{ color: theme.tertiary }}>
             <h6>{`Hi, I am ${headerData.name} and I'm a `}</h6>
             <div className={classes.typingDiv}>
-              <Typing loop hideCursor>
+              <Typing loop={10} hideCursor>
                 {titleArr.map((item) => (
                   <>
                     <Typing.Speed ms={20} />

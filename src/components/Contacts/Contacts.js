@@ -230,7 +230,6 @@ function Contacts() {
                   className={`form-message ${classes.message}`}
                 />
               </div>
-
               <div className="submit-btn">
                 <button type="submit" className={classes.submitBtn}>
                   <p>{!success ? "Send" : "Sent"}</p>

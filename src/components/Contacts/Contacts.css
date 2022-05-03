@@ -132,6 +132,7 @@
     justify-content: space-evenly;
     flex: 0.6;
     box-sizing: border-box;
+    padding-left: 7rem;
     margin-top: 1.2rem;
 }
 
@@ -181,7 +182,6 @@
     }
 }
 
-
 @media screen and (max-width: 992px) {
     .contacts--img {
         display: none;
@@ -195,7 +195,7 @@
         margin: 0 0 1.2rem 0;
     }
     .contacts-details {
-        padding-left: 0rem;
+        padding-left: 4rem;
     }
     .personal-details p {
         margin-left: 1rem;

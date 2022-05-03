@@ -148,7 +148,7 @@ function Contacts() {
         fetch("/", {
           method: "POST",
           headers: { "Content-Type": "application/x-www-form-urlencoded" },
-          body: encode({ "form-name": e.target.getAttribute("name"), ...responseData }),
+          body: encode({ "form-name": "contact", ...responseData }),
         })
           .then(() => setSuccess(true))
           .catch((error) => alert(error));
@@ -185,9 +185,9 @@ function Contacts() {
             <form
               name="contact"
               netlify="true"
-              data-netlify="true"
               netlify-honeypot="bot-field"
               hidden
+              method="POST"
               onSubmit={handleContactForm}
             >
               <input type="hidden" name="form-name" value="contact" />

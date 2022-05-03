@@ -181,7 +181,7 @@ function Contacts() {
       <div className="contacts--container">
         <h1 style={{ color: theme.primary }}>Reach me out!</h1>
         <div className="contacts-body">
-          {/* <div className="contacts-form">
+          <div className="contacts-form">
             <form
               name="contact"
               netlify="true"
@@ -285,7 +285,7 @@ function Contacts() {
                 message={errMsg}
               />
             </Snackbar>
-          </div> */}
+          </div>
 
           <div className="contacts-details">
             <a

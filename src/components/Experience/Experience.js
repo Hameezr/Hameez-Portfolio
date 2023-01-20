@@ -27,7 +27,7 @@ function Experience() {
                             startYear={exp.startYear}
                             endYear={exp.endYear}
                             details={exp.details}
-                            />
+                        />
                     ))}
                  </div>
              </div>

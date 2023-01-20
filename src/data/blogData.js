@@ -1,4 +1,5 @@
 import mui from "../assets/svg/blog/mui.png"
+import reactVsAngular from "../assets/png/reactVsAngular.png"
 
 export const blogData = [
     {
@@ -9,14 +10,14 @@ export const blogData = [
         image: mui,
         url: 'https://medium.com/p/7ac1ad78f2a7'
     },
-    // {
-    //     id: 2,
-    //     title: 'CHECK WEATHER FROM TERMINAL USING WTTR.IN',
-    //     description: 'wttr.in is a console-oriented weather forecast service that supports various information representation methods like ANSI-sequences for console HTTP clients, HTML, or PNG.',
-    //     date: 'Aug 11, 2020',
-    //     image: 'https://1.bp.blogspot.com/-OW7jX57tea4/XvnGxuEOslI/AAAAAAAABW0/R8lVT1AXDSwnvE0EGA9Ra49-LDm1ACwDgCK4BGAsYHg/s1216/wttr1.png',
-    //     url: 'https://hackzism.blogspot.com/2020/06/check-weather-from-terminal-using-wttrin.html'
-    // },
+    {
+        id: 2,
+        title: 'React Vs Angular',
+        description: 'A detailed analysis on choosing between the most used javascript frameworks for your project, React and Angular',
+        date: 'Nov 7, 2022',
+        image: reactVsAngular,
+        url: 'https://medium.com/@hameezrizwan/react-vs-angular-f67aee1d6999'
+    },
     // {
     //     id: 3,
     //     title: 'BEING ANONYMOUS: A BEGINNERS GUIDE',

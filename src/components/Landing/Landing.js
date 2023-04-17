@@ -88,12 +88,8 @@ function Landing() {
   }));
 
   const classes = useStyles();
-  const [titleArr, setTitleArr] = React.useState([]);
-
-  React.useEffect(() => {
-    let temp = ["Full Stack Engineer", "Web Designer", "Product Engineer"];
-    setTitleArr(temp);
-  }, []);
+  // const [titleArr, setTitleArr] = React.useState(["Full Stack Engineer", "Web Designer", "Product Engineer"]);
+  let titleArr = ["Full Stack Engineer", "Web Designer", "Product Engineer"];
 
   return (
     <div className="landing">
@@ -175,7 +171,7 @@ function Landing() {
           <div className="lcr--content" style={{ color: theme.tertiary }}>
             <h6>{`Hi, I am ${headerData.name} and I'm a `}</h6>
             <div className={classes.typingDiv}>
-              <Typing loop={10} hideCursor>
+              <Typing loop hideCursor>
                 {titleArr.map((item) => (
                   <>
                     <Typing.Speed ms={20} />
@@ -186,8 +182,7 @@ function Landing() {
                 ))}
               </Typing>
             </div>
-            <p>{headerData.desciption}</p>
-
+            <p style={{'white-space': 'pre-wrap'}}>{headerData.desciption}</p>
             <div className="lcr-buttonContainer">
               {headerData.resumePdf && (
                 <a

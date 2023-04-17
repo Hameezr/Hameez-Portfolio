@@ -3,7 +3,7 @@ import community from '../assets/svg/achievements/community.svg'
 import team from '../assets/svg/achievements/Team.png'
 
 export const achievementData = {
-    bio : "I believe I possess a growth mindset to keep on evolving and making positive changes that solves a problem of the society or people in general. With such a mindset, there are accomplishments at every walk of life. Not many of these accomplishments can be quantified though, and for that I have my past projects to showcase my skills",
+    bio : "With a relentless drive for growth and improvement, I strive to create solutions that positively impact society and the lives of others. This mindset has fueled accomplishments throughout my journey, both quantifiable and intangible.\n\nTo demonstrate the scope of my skills and the tangible results I've achieved, I invite you to explore my past projects, which serve as a testament to my dedication and innovative approach.",
         achievements : [
         {
             id : 1,

@@ -1,5 +1,6 @@
 import mui from "../assets/svg/blog/mui.png"
 import reactVsAngular from "../assets/png/reactVsAngular.png"
+import pnpm from "../assets/png/pnpm.jpg"
 
 export const blogData = [
     {
@@ -18,14 +19,14 @@ export const blogData = [
         image: reactVsAngular,
         url: 'https://medium.com/@hameezrizwan/react-vs-angular-f67aee1d6999'
     },
-    // {
-    //     id: 3,
-    //     title: 'BEING ANONYMOUS: A BEGINNERS GUIDE',
-    //     description: 'Here are some basic ways to lay off the Radar',
-    //     date: 'Aug 14, 2020',
-    //     image: 'https://1.bp.blogspot.com/-GR19yCNbKCE/XuRcKEfKvhI/AAAAAAAAAwY/srFWw5pOpzMibeJb__SmgZpx9dIpNNWqgCK4BGAsYHg/w640-h426/anonymous1.jpg',
-    //     url: 'https://hackzism.blogspot.com/2020/06/being-anonymous-beginners-guide.html'
-    // },
+    {
+        id: 3,
+        title: 'Goodbye to NPM Woes!',
+        description: `This blog post spills the beans on the amazingness of pnpm. Don't miss out on this game-changing tool. Dive in now and witness the pnpm wizardry!`,
+        date: 'May 13, 2023',
+        image: pnpm,
+        url: 'https://medium.com/@hameezrizwan/introducing-pnpm-the-efficient-package-manager-for-javascript-projects-5f4a3be739ae'
+    },
     // {
     //     id: 4,
     //     title: 'CHECK INTERNET SPEED FROM THE COMMAND LINE',

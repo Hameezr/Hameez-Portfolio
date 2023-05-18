@@ -3,7 +3,7 @@ import { Button } from "@material-ui/core";
 import { NavHashLink as NavLink } from "react-router-hash-link";
 import { makeStyles } from "@material-ui/core/styles";
 
-import Typing from "react-typing-animation";
+// import Typing from "react-typing-animation";
 
 import "./Landing.css";
 import { ThemeContext } from "../../contexts/ThemeContext";
@@ -89,7 +89,7 @@ function Landing() {
 
   const classes = useStyles();
   // const [titleArr, setTitleArr] = React.useState(["Full Stack Engineer", "Web Designer", "Product Engineer"]);
-  let titleArr = ["Full Stack Engineer", "Web Designer", "Product Engineer"];
+  // let titleArr = ["Full Stack Engineer", "Web Designer", "Product Engineer"];
 
   return (
     <div className="landing">

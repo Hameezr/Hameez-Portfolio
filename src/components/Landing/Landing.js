@@ -69,7 +69,7 @@ function Landing() {
       height: "57px",
       width: "500px",
       [t.breakpoints.down("sm")]: {
-        width: "260px",
+        width: "100%",
         height: "50px",
       },
       [t.breakpoints.down("xs")]: {
@@ -171,7 +171,8 @@ function Landing() {
           <div className="lcr--content" style={{ color: theme.tertiary }}>
             <h6>{`Hi, I am ${headerData.name} and I'm a `}</h6>
             <div className={classes.typingDiv}>
-              <Typing loop hideCursor>
+              <h1 className={classes.typewriterFont}>Full Stack Engineer</h1>
+              {/* <Typing loop hideCursor>
                 {titleArr.map((item) => (
                   <>
                     <Typing.Speed ms={20} />
@@ -180,9 +181,9 @@ function Landing() {
                     <Typing.Backspace count={20} />
                   </>
                 ))}
-              </Typing>
+              </Typing> */}
             </div>
-            <p style={{'white-space': 'pre-wrap'}}>{headerData.desciption}</p>
+            <p style={{ 'white-space': 'pre-wrap' }}>{headerData.desciption}</p>
             <div className="lcr-buttonContainer">
               {headerData.resumePdf && (
                 <a

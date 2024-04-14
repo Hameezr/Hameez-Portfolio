@@ -72,8 +72,8 @@ import picsart from '../assets/svg/skills/picsart.svg'
 import sketch from '../assets/svg/skills/sketch.svg'
 import unity from '../assets/svg/skills/unity.svg'
 import wolframalpha from '../assets/svg/skills/wolframalpha.svg'
-
 import canva from '../assets/svg/skills/canva.svg'
+import nodejs from '../assets/svg/skills/nodejs.svg'
 
 
 export const skillsImage = (skill) => {
@@ -227,6 +227,8 @@ export const skillsImage = (skill) => {
             return wolframalpha;
         case 'canva':
             return canva;
+        case 'node js':
+            return nodejs;
         default:
             break;
     }

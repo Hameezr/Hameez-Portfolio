@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Fade from "react-reveal/Fade";
+import { Typography, Box } from "@material-ui/core";
 
 import { ThemeContext } from "../../contexts/ThemeContext";
 
@@ -33,8 +34,9 @@ function ExperienceCard({
       backgroundColor: "#eaeaeacc",
       borderRadius: "50%",
       display: "inline-block",
-      marginRight: '6px',
-      marginTop: '8px',
+      marginRight: "6px",
+      marginTop: "4px",
+      flexShrink: 0,
     },
   }));
   const [isShown, setIsShown] = React.useState(false);
@@ -63,10 +65,12 @@ function ExperienceCard({
           <h5 style={{ color: theme.tertiary80 }}>{company}</h5>
           {isShown
             ? details.map((item) => (
-                <div style={{display: 'flex'}}>
-                  <span className={classes.dot}></span>
-                  <h6 style={{ color: theme.tertiary80, fontSize: '0.85rem', margin: '5px 0px'}}>{item}</h6>
-                </div>
+              <Box display="flex" alignItems="center">
+              <span className={classes.dot}></span>
+              <Typography variant="subtitle2" style={{ color: theme.tertiary80, margin: '5px 0' }}>
+                {item}
+              </Typography>
+            </Box>
               ))
             : null}
         </div>

@@ -1,31 +1,32 @@
 import mui from "../assets/svg/blog/mui.png"
 import reactVsAngular from "../assets/png/reactVsAngular.png"
 import pnpm from "../assets/png/pnpm.jpg"
+import customDecorator from "../assets/png/customDecorator.png"
 
 export const blogData = [
     {
         id: 1,
+        title: 'Goodbye to NPM Woes!',
+        description: `This blog post focuses on introducing pnpm. Don't miss out on this game-changing tool. Dive in now and see the pnpm wizardry!`,
+        date: 'May 13, 2023',
+        image: pnpm,
+        url: 'https://medium.com/@hameezrizwan/introducing-pnpm-the-efficient-package-manager-for-javascript-projects-5f4a3be739ae'
+    },
+    {
+        id: 2,
+        title: 'Custom Decorators in NEST JS',
+        description: 'The article explains creating a custom GetUser decorator in NestJS to simplify fetching user emails from request tokens.',
+        date: 'Apr 20, 2022',
+        image: customDecorator,
+        url: 'https://medium.com/@hameezrizwan/custom-decorator-in-nestjs-f8cecaad0f7a'
+    },
+    {
+        id: 3,
         title: 'Persistent Columns in Material-UI DataGrid',
         description: 'If you are using DataGrid by Material-UI, here\'s how you can make them persistent',
         date: 'Apr 20, 2022',
         image: mui,
         url: 'https://medium.com/p/7ac1ad78f2a7'
-    },
-    {
-        id: 2,
-        title: 'React Vs Angular',
-        description: 'A detailed analysis on choosing between the most used javascript frameworks for your project, React and Angular',
-        date: 'Nov 7, 2022',
-        image: reactVsAngular,
-        url: 'https://medium.com/@hameezrizwan/react-vs-angular-f67aee1d6999'
-    },
-    {
-        id: 3,
-        title: 'Goodbye to NPM Woes!',
-        description: `This blog post spills the beans on the amazingness of pnpm. Don't miss out on this game-changing tool. Dive in now and witness the pnpm wizardry!`,
-        date: 'May 13, 2023',
-        image: pnpm,
-        url: 'https://medium.com/@hameezrizwan/introducing-pnpm-the-efficient-package-manager-for-javascript-projects-5f4a3be739ae'
     },
     // {
     //     id: 4,

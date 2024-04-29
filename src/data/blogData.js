@@ -1,5 +1,4 @@
 import mui from "../assets/svg/blog/mui.png"
-import reactVsAngular from "../assets/png/reactVsAngular.png"
 import pnpm from "../assets/png/pnpm.jpg"
 import customDecorator from "../assets/png/customDecorator.png"
 

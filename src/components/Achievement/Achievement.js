@@ -7,7 +7,7 @@ import AchievementCard from './AchievementCard';
 
 function Achievement() {
 
-    const { theme } = useContext(ThemeContext);
+const { theme } = useContext(ThemeContext);
     return (
         <>
             {achievementData.achievements.length > 0 && (

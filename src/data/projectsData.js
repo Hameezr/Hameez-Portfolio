@@ -12,7 +12,7 @@ export const projectsData = [
     {
         id: 1,
         projectName: 'Fintech Loan Financing App',
-        projectDesc: 'I developed a Fintech app that offers specialized loan financing solutions for both individuals and businesses. The app includes Personal Premium Financing, which allows individuals to manage their insurance premium costs by spreading payments over time. Additionally, I incorporated Commercial Premium Financing to help businesses optimize their cash flow by distributing insurance premium payments over a specified period.',
+        projectDesc: 'Twin Premium provides Personal and Commercial Premium Financing, enabling businesses and individuals to spread their insurance payments over time, optimizing cash flow and managing costs effectively.',
         tags: ['Nest', 'Node', 'GCP', 'React', 'Next'],
         code: 'https://twinapp.com/',
         demo: 'https://twinapp.com/',
